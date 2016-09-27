@@ -89,8 +89,104 @@
         app:layout_constraintBottom_toBottomOf="@+id/teamAScore"
         app:layout_constraintLeft_toRightOf="@+id/teamAScore"
         app:layout_constraintRight_toLeftOf="@+id/teamBScore"
-        app:layout_constraintTop_toTopOf="@+id/teamBScore"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintTop_toTopOf="@+id/teamBScore" />
+
+    <TextView
+        android:id="@+id/foulTeamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/default_score"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineCenter"
+        app:layout_constraintTop_toBottomOf="@+id/teamAScore" />
+
+    <TextView
+        android:id="@+id/foulTeamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/default_score"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineCenter"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamBScore" />
+
+    <TextView
+        android:id="@+id/foul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reg_foul"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/foulTeamA"
+        app:layout_constraintLeft_toRightOf="@+id/foulTeamA"
+        app:layout_constraintRight_toLeftOf="@+id/foulTeamB"
+        app:layout_constraintTop_toTopOf="@+id/foulTeamB" />
+
+    <TextView
+        android:id="@+id/yellowCardTeamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_score"
+        android:textSize="24sp"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineCenter"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/foulTeamA" />
+
+    <TextView
+        android:id="@+id/yellowCardTeamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/default_score"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineCenter"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foulTeamB" />
+
+    <TextView
+        android:id="@+id/yellowCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yellow_card"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/yellowCardTeamA"
+        app:layout_constraintLeft_toRightOf="@+id/yellowCardTeamA"
+        app:layout_constraintRight_toRightOf="@+id/yellowCardTeamB"
+        app:layout_constraintTop_toTopOf="@+id/yellowCardTeamB" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/default_score"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineCenter"
+        app:layout_constraintTop_toBottomOf="@+id/yellowCardTeamA" />
 
 
 </android.support.constraint.ConstraintLayout>
