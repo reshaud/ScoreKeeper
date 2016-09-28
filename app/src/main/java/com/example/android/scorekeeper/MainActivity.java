@@ -71,6 +71,22 @@ public class MainActivity extends AppCompatActivity {
         DisplayTeamAFoul();
     }
 
+    public void TeamAYCard(View v) {
+        //Increment yellow card counter
+        yellowCardTeamA++;
+
+        //Dislay current yellow card count
+        DisplayTeamAYCard();
+    }
+
+    public void TeamARCard(View v) {
+        //Increment red card counter
+        redCardTeamA++;
+
+        //Display current red card count
+        DisplayTeamARCard();
+    }
+
     //**********************************************************************************************
     //**********************************************************************************************
     //Team B Functions
@@ -117,6 +133,38 @@ public class MainActivity extends AppCompatActivity {
         DisplayTeamBFoul();
     }
 
+    public void TeamBYCard(View v) {
+        //Increment yellow card counter
+        yellowCardTeamB++;
+
+        //Dislay current yellow cards
+        DisplayTeamBYCard();
+    }
+
+    public void TeamBRCard(View v) {
+        //Increment red card counter
+        redCardTeamB++;
+
+        //Display current red card count
+        DisplayTeamBRCard();
+    }
+
 
     //**********************************************************************************************
+
+    public void Reset() {
+        //Reset ALL counters
+
+        //Team A counters
+        goalTeamA = 0;
+        foulTeamA = 0;
+        yellowCardTeamA = 0;
+        redCardTeamA = 0;
+
+        //Team B counters
+        goalTeamB = 0;
+        foulTeamB = 0;
+        yellowCardTeamB = 0;
+        redCardTeamB = 0;
+    }
 }
