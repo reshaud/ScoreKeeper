@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
 
     //**********************************************************************************************
 
-    public void Reset() {
+    public void Reset(View v) {
         //Reset ALL counters
 
         //Team A counters
@@ -166,5 +166,15 @@ public class MainActivity extends AppCompatActivity {
         foulTeamB = 0;
         yellowCardTeamB = 0;
         redCardTeamB = 0;
+
+        //Display reset scores
+        DisplayTeamAGoal();
+        DisplayTeamAFoul();
+        DisplayTeamAYCard();
+        DisplayTeamARCard();
+        DisplayTeamBGoal();
+        DisplayTeamBFoul();
+        DisplayTeamBYCard();
+        DisplayTeamBRCard();
     }
 }

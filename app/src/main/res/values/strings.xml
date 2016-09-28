@@ -7,4 +7,5 @@
     <string name="yellow_card">Yellow Card</string>
     <string name="red_card">Red Card</string>
     <string name="default_score">0</string>
+    <string name="reset">Reset Game</string>
 </resources>

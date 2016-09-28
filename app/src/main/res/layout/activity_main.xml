@@ -221,10 +221,11 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="32dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="32dp"
         android:onClick="TeamAGoal"
         android:text="@string/goal"
         android:textSize="14sp"
+        app:layout_constraintHorizontal_bias="0.33"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/guidelineCenter"
         app:layout_constraintTop_toBottomOf="@+id/redCardTeamA" />
@@ -237,10 +238,11 @@
         android:layout_marginLeft="32dp"
         android:layout_marginRight="16dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="32dp"
         android:onClick="TeamBGoal"
         android:text="@string/goal"
         android:textSize="14sp"
+        app:layout_constraintHorizontal_bias="0.66"
         app:layout_constraintLeft_toLeftOf="@+id/guidelineCenter"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/redCardTeamB" />
@@ -342,4 +344,18 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/yellowCardButtonB" />
 
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="Reset"
+        android:text="@string/reset"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 </android.support.constraint.ConstraintLayout>
